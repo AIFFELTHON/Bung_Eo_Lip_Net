@@ -23,8 +23,8 @@ Detect the lip, Recognition sentences, Show Subtitles.
 
 <br>
 
-<a href="https://github.com/AIFFELTHON/Bung_Eo_Lip_Netgraphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AIFFELTHON/Bung_Eo_Lip_Netgraphs" />
+<a href="https://github.com/AIFFELTHON/Bung_Eo_Lip_Net/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AIFFELTHON/Bung_Eo_Lip_Net" />
 </a>
 
 ---
