@@ -45,7 +45,6 @@
 
 - 팀 소개
 
-- Collaborators
 <a href="https://github.com/AIFFELTHON/Bung_Eo_Lip_Net/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=AIFFELTHON/Bung_Eo_Lip_Net" />
 </a>
