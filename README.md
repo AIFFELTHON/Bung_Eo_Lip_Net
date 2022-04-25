@@ -1,8 +1,6 @@
 <h1 align="center">🎉 아이펠톤(Aiffelthon) 🎉</h1>
 
 <div align="right">
-  <a href="https://github.com/AIFFELTHON/Bung_Eo_Lip_Net"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAIFFELTHON%2FBung_Eo_Lip_Net&count_bg=%23000000&title_bg=%23000000&icon=github.svg&icon_color=%23E7E7E7&title=Bung_Eo_Lip_Net&edge_flat=false)"/></a>
-  <br>
   AIFFEL DAEGU 1 TEAM 뻐끔뻐끔
   <br>
   <i>#Tags: CV, NLP, LipNet</i>
