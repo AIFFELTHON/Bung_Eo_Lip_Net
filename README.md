@@ -24,7 +24,7 @@
 
 ---
 
-## 📆 Milestone (2022.04.25 ~ 2022.06.10)
+## 📆 Milestone (2022.04.20 ~ 2022.06.10)
 
 |단계|내용|M1|M2|H1|H2|H3|H4|H5|H6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -74,11 +74,13 @@
 |3|Google Shared Drive|[🔗][Google Shared Drive]|파일 공유|
 |4|Colab Jupyter Notebook|[🔗][Colab Jupyter Notebook]|코드 및 마크다운 작성|
 |5|GitHub|[🔗][GitHub]|업로드 및 제출|
+|6|Notion|[🔗][Notion]|프로젝트 진행 기록|
 
 [Figma]: https://www.figma.com/file/yADblEOzjSj2jo43xdCHn4/AIFFELTHON?node-id=0%3A1
 [Google Shared Drive]: https://drive.google.com/drive/folders/1WlgzdIVu4ZOR0R1_RS2aa8YXVIvQPqn0?usp=sharing
 [Colab Jupyter Notebook]: https://colab.research.google.com/drive/1UY0x-3ggFeSodhk6rokyZJDIl5swzLZO
 [GitHub]: Bung_Eo_Lip_Net.ipynb
+[Notion]: https://www.notion-pinotnoir056.com/8f71053c-b272-49dc-ac72-1463c747f382
 
 **[⬆ back to top](#-table-of-contents)**
 
