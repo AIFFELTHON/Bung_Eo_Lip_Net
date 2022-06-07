@@ -4,9 +4,9 @@ from subprocess import call
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 import os
 
-#result = getVideos.test("./videos.json")
+result = getVideos.test("./videos.json")
 #['001','002','003']
-result = []
+#result = []
 with open ("./videos.json","r") as loadJson:
     LOAD = json.load(loadJson)
     for key, value in LOAD.items():
@@ -25,7 +25,8 @@ for key in result:
 	VideoNameJson = {"VideoName" : key, "words":[]}
 	WordJson.append(VideoNameJson)
 	ListJson = []
-	with open('/home/sej/STT-DataPreprocessing/STT/wavs/' + key + '_cut.json', encoding='cp949') as f:
+	#encoding='cp949'
+	with open('/home/SEJ/STT-DataPreprocessing/STT/wavs/' + key + '.json') as f:
 		data = json.load(f)
 
 	for count in range(len(data)):
@@ -57,8 +58,8 @@ for key in result:
 				print(WordTimeList[2])
 				#앞뒤로 0.3초 패딩
 				ffmpeg_extract_subclip("./avi/{}.avi".format(key), 
-										WordTimeList[1]-0.1, 
-										WordTimeList[0]+2.0, 
+										WordTimeList[1]-0.3, 
+										WordTimeList[0]+0.2, 
 										targetname="./data/{}/video/{}.avi".format(key, video_name))
 				#align.txt 만들기
 				txt = open("./data/{}/align/{}.txt".format(key, video_name), 'a')
