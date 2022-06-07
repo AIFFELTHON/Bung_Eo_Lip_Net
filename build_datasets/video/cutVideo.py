@@ -7,6 +7,14 @@ import os
 result = getVideos.test("./videos.json")
 #['001','002','003']
 #result = []
+result = []
+# def test(jsonDir):
+# 	# videos.json  읽어오기
+#     with open ("./videos.json","r") as loadJson:
+#         LOAD = json.load(loadJson)
+#     for key, value in LOAD.items():
+# 		result.apeend(key)
+
 with open ("./videos.json","r") as loadJson:
     LOAD = json.load(loadJson)
     for key, value in LOAD.items():
@@ -26,7 +34,7 @@ for key in result:
 	WordJson.append(VideoNameJson)
 	ListJson = []
 	#encoding='cp949'
-	with open('/home/SEJ/STT-DataPreprocessing/STT/wavs/' + key + '.json') as f:
+	with open('/home/LCS-zizon/Bung_Eo_Lip_Net/build_datasets/STT/wavs/' + key + '.json') as f:
 		data = json.load(f)
 
 	for count in range(len(data)):
