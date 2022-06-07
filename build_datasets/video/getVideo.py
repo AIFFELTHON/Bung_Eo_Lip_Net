@@ -17,9 +17,10 @@ def test(jsonDir):
         yt = YouTube('"{}"'.format(value))
 	# youtube mp4로 (영상만)
     # 영상+음원은 adaptive=True
-        stream = yt.streams.filter(adaptive=True, file_extension='mp4', only_video=True).order_by('resolution').desc().first()
+        # stream = yt.streams.filter(adaptive=True, file_extension='mp4', only_video=True).order_by('resolution').desc().first()
+        # stream.download('./', '{}.mp4'.format(key))
+        stream = yt.streams.get_highest_resolution()
         stream.download('./', '{}.mp4'.format(key))
-
 	# mp4를 avi로
         call('ffmpeg -i ./{}.mp4 ./avi/{}.avi'.format(key, key), shell=True)
 
