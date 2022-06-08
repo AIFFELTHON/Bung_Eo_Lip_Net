@@ -16,7 +16,7 @@
 │   │         ├── face_video
 │   │         ├── video
 │   │         └── WordJson.json
-│   ├── MostWord/ ├── MostWord = [] 리스트안에 담은 단어
+│   ├── MostWord/ ├── `MostWord`
 │   ├── cropMouth.py
 │   ├── cutVideo.py
 │   ├── dictWord.py
@@ -42,12 +42,8 @@
 
 ###Video
 - [x] 영상 단어(어절)에 맞추어 자르기
-- [x] 입술 크롭한 데이터 폴더명 지정하기
 - [x] 영상 얼굴 랜드마크 찾고 얼굴 자르기
-
-
-
-
+- [x] 빈도수 높은 단어들만 모아서 따로 폴더에 담기
 
 ```
 

@@ -5,10 +5,9 @@
 - [x] 영상다운받기
 - [x] 영상 GCS에 올리기
 - [x] 영상 JSON 형태로 STT 추출
-- [x] 503에러 해결
-	- [x] json파일 경로 './STT/wavs/'
-- [x] Timeout 에러
-	- [x] 영상길이가 너무 길경우에 STT변환 x (약 13분 이상)
+- [x] json파일 경로 './STT/wavs/'
+- [x] GCS Timeout 에러
+	- 영상길이가 너무 길경우에 STT 변환되지않음 (약 13분 이상)
 
 
 ## 준비물
