@@ -6,6 +6,7 @@ import os
 
 # result = getVideos.test("./videos.json")
 #['001','002','003']
+#result = []
 result = []
 
 with open ("./videos.json","r") as loadJson:
