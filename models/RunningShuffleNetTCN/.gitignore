@@ -19,8 +19,8 @@ ipython_config.py
 
 sample
 hangeul
-Lipreading_using_Temporal_Convolutional_Networks-master/landmarks
-Lipreading_using_Temporal_Convolutional_Networks-master/datasets
-Lipreading_using_Temporal_Convolutional_Networks-master/wandb
-Lipreading_using_Temporal_Convolutional_Networks-master/train_logs
-Lipreading_using_Temporal_Convolutional_Networks-master/result
+ShuffleNetTCN/landmarks
+ShuffleNetTCN/datasets
+ShuffleNetTCN/wandb
+ShuffleNetTCN/train_logs
+ShuffleNetTCN/result
