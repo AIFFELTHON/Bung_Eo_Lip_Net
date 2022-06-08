@@ -61,7 +61,7 @@
 
 ![Total Process][Total Process]
 
-[Total Process]: imgs/전체_프로세스.PNG
+[Total Process]: imgs/Total_process.PNG
 
 ### 협업 툴 사용
 
