@@ -8,16 +8,6 @@ import numpy as np
 # 규칙 설정
 def rules(epoch):
     # 문장 길이, flip 확률, jitter 확률 설정
-    if epoch == 0:
-        return {'sentence_length': 1, 'flip_probability': 0, 'jitter_probability': 0}
-    if epoch == 1:
-        return {'sentence_length': 2, 'flip_probability': 0.5, 'jitter_probability': 0}
-    if epoch == 2:
-        return {'sentence_length': 3, 'flip_probability': 0.5, 'jitter_probability': 0.05}
-    if epoch == 3:
-        return {'sentence_length': -1, 'flip_probability': 0, 'jitter_probability': 0}
-    if epoch == 4:
-        return {'sentence_length': -1, 'flip_probability': 0.5, 'jitter_probability': 0}
     return {'sentence_length': -1, 'flip_probability': 0.5, 'jitter_probability': 0.05}  # 딕셔너리 반환
 
 # 결과 출력

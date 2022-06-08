@@ -4,7 +4,7 @@ import string
 import io
 from collections import Counter
 import codecs
-import pdb
+
 
 
 # Source: https://github.com/commonsense/metanl/blob/master/metanl/token_utils.py
@@ -23,32 +23,22 @@ def untokenize(words):
     step5 = step4.replace(" ` ", " '")
     return step5.strip()
 
-# Source: https://stackoverflow.com/questions/367155/splitting-a-string-into-words-and-punctuation
-def tokenize(text):
-    return re.findall(r"\W+", text)
 
-# Source: http://norvig.com/spell-correct.html (with some modifications)
+def tokenize(text):
+    return re.findall(r"\s+", text)
+
+
 class Spell(object):
     def __init__(self, path): # 
-        # pdb.set_trace()
-        print(f'======================={path}==========================')
         self.dictionary = Counter(self.words(io.open(path, 'r',encoding='utf-8').read()))
         print("dictionary" + str(self.dictionary))
 
     def words(self, text):
-        # pdb.set_trace()
         text = text.replace('\n', ' ')
-        # hangul = re.findall('[^ ㄱ-ㅣ가-힣+]', text)
-        hangul = re.compile('[^ ㄱ-ㅣ가-힣+]')
+        hangul = re.compile('[^ a-z가-힣+]')
         result = hangul.sub('', text)
         result = list(result)
         return result
-        # hangulencode = []
-        # for i in range(len(hangul)):
-        #     hangulencode.append(hangul[i])
-        #     print(hangul[i])
-        # #print hangulencode
-        # return hangulencode
 
     def P(self, word, N=None):
         "Probability of `word`."
@@ -68,19 +58,7 @@ class Spell(object):
         "The subset of `words` that appear in the dictionary of WORDS."
         return set(w for w in words if w in self.dictionary)
 
-    # def edits1(self, word):
-    #     "All edits that are one edit away from `word`."
-    #     letters    = 'abcdefghijklmnopqrstuvwxyz'
-    #     splits     = [(word[:i], word[i:])    for i in range(len(word) + 1)]
-    #     deletes    = [L + R[1:]               for L, R in splits if R]
-    #     transposes = [L + R[1] + R[0] + R[2:] for L, R in splits if len(R)>1]
-    #     replaces   = [L + c + R[1:]           for L, R in splits if R for c in letters]
-    #     inserts    = [L + c + R               for L, R in splits for c in letters]
-    #     return set(deletes + transposes + replaces + inserts)
 
-    # def edits2(self, word):
-    #     "All edits that are two edits away from `word`."
-    #     return (e2 for e1 in self.edits1(word) for e2 in self.edits1(e1))
 
     # Correct words
     def corrections(self, words):
@@ -88,11 +66,4 @@ class Spell(object):
 
     # Correct sentence
     def sentence(self, sentence):
-        # return untokenize(sentence)
-
-        # print("sentence===")
-        # print(sentence)
-        # print("unicode_sentence===")
-        # print(unicode(sentence))
-
-        return sentence
+        return untokenize(self.corrections(tokenize(sentence)))

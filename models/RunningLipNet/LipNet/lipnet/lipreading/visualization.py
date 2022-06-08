@@ -3,6 +3,8 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 import matplotlib.patheffects as path_effects
+import matplotlib.font_manager as fm
+plt.rc('font', family='NanumBarunGothic') # 폰트 설정
 
 
 
@@ -23,6 +25,7 @@ def show_video_subtitle(frames, subtitle):
     inc = max(len(frames)/(len(subs)+1), 0.01)
 
     img = None
+    os.makedirs('./results')
     for i, frame in enumerate(frames):
         sub = " ".join(subs[:int(i/inc)]) #split한 subtitle[:int(i/inc)]까지 join
 
@@ -34,10 +37,10 @@ def show_video_subtitle(frames, subtitle):
             img.set_data(frame)
 
         i = f'{i}'.zfill(2)
+        
         save_path = os.path.join(os.getcwd(), f'results/result_{i}.png')
         ax.axes.get_xaxis().set_visible(False)
         ax.axes.get_yaxis().set_visible(False)
         plt.subplots_adjust(left = 0, bottom = 0, right = 1, top = 1, hspace = 0, wspace = 0)
         plt.savefig(filename=save_path, bbox_inches='tight', pad_inches=0)
         
-        fig.canvas.draw()

@@ -1,6 +1,5 @@
 from keras import backend as K
 import numpy as np
-import pdb
 
 def _decode(y_pred, input_length, greedy=True, beam_width=100, top_paths=1):
     """Decodes the output of a softmax.
@@ -68,7 +67,6 @@ class Decoder(object):
                          top_paths=self.top_paths, language_model=self.language_model)
         # 전처리 리스트
         preprocessed = []
-        # pdb.set_trace()
         for output in decoded:
             out = output
             for postprocessor in self.postprocessors:
