@@ -15,13 +15,17 @@ cd LipNet/
 pip install -e .
 ```
 비디오 파일을 처리하기 위해 Ubuntu에서 ffmpeg 설치  
-
-``apt install ffmpeg``
+``apt install ffmpeg``  
+  
+한글 자막을 출력하기 위한 한글 폰트 설치  
+``apt-get install fonts-nanum``
 
 ## face_landmarks.dat 추가하기  
 ``/LipNet/predictors/{shape_predictor_68_face_landmarks.dat}`` 
 shape_predictor_68_face_landmarks.dat를 다운로드 받아 해당 위치에 넣어주어야 합니다.
 ## dataset  
+  
+STT를 이용해서 데이터를 만들면 됩니다.  
   
 video 파일을 traning에 넣고 ``/LipNet/scripts/extract_mouth_batch.py``를 실행하여 mouth crop된 image frame을 생성합니다.  
 
