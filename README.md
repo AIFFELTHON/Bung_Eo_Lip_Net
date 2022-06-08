@@ -10,7 +10,7 @@
 
 ## 📌 TABLE OF CONTENTS
 
-- [📆 Milestone](#-milestone-20220420--20220610)
+- [📆 진행 기간](#-진행-기간-20220420--20220610)
 - [💋 팀 소개: 뻐끔뻐끔](#-팀-소개-뻐끔뻐끔)
 - [🐡 프로젝트명: 붕어립(Bung-Eo-Lip)](#-프로젝트-소개-붕어립bung-eo-lip)
 - [🗂 한국어 데이터셋 구축](#-한국어-데이터셋-구축)
@@ -22,7 +22,7 @@
 
 ---
 
-## 📆 Milestone (2022.04.20 ~ 2022.06.10)
+## 📆 진행 기간 (2022.04.20 ~ 2022.06.10)
 
 |단계|내용|M1|M2|H1|H2|H3|H4|H5|H6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -74,6 +74,7 @@
 |5|GitHub|[🔗][GitHub]|업로드 및 제출|
 |6|Notion|[🔗][Notion]|프로젝트 진행 기록|
 |7|Google Shared PPT|[🔗][PPT]|발표 PPT 작성|
+|8|GCP|-|개발 환경 구축|
 
 [Figma]: https://www.figma.com/file/yADblEOzjSj2jo43xdCHn4/AIFFELTHON?node-id=0%3A1
 [Google Shared Drive]: https://drive.google.com/drive/folders/1WlgzdIVu4ZOR0R1_RS2aa8YXVIvQPqn0?usp=sharing
@@ -215,9 +216,19 @@
 
 ## 🔗 참고자료
 
-![Papers][Papers]
+### Lipreading 논문 도표
 
-[Papers]: imgs/paper_chart.PNG
+![Paper chart 1][Paper chart 1]
+
+[Paper chart 1]: imgs/Paper_chart_1.PNG
+
+### 차용한 논문 3가지
+
+![Paper chart 2][Paper chart 2]
+
+[Paper chart 2]: imgs/Paper_chart_2.PNG
+
+### 차용한 논문 관련 링크
 
 |번호|논문 제목|년도|논문 링크|깃허브|
 |:---:|---|:---:|:---:|:---:|
