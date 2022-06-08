@@ -3,7 +3,7 @@
 <div align="right">
   AIFFEL DAEGU 1 TEAM 뻐끔뻐끔
   <br>
-  <i>#Tags: CV, NLP, LipNet, ShuffleNet-TCN</i>
+  <i>#Tags: Lipreading, LipNet, ShuffleNet-TCN, CV, NLP</i>
 </div>
 
 ---
