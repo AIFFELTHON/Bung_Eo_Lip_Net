@@ -39,6 +39,7 @@ python3 takeWord.py
 
 ## 준비물
 - `youtube` 영상 링크를 모아둔 `Json` 파일
+- STT `json`파일
 
 ```json
 // -ex
@@ -50,3 +51,7 @@ python3 takeWord.py
 }
 ```
 
+- `videos.json`에 영상 목록을 담고 `wav/` 폴더안에 STT json파일이 있어야함
+- `cutVideo`를 실행시키면 영상을 다운받고 타임스탬프대로 잘라줌 (`avi/` 폴더안에는 `영상.avi`)
+- `faceRecognitionFromVideo`는 얼굴 box 검출 후 영상을 잘라줌 I/O video/video
+- `takeWord`는 `MostWord/` 빈도수 높은 단어들을 폴더 안에 담기
