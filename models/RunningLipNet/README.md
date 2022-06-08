@@ -18,23 +18,25 @@ pip install -e .
 
 ``apt install ffmpeg``
 
-video 파일을 traning에 넣고 
-``scripts/extract_mouth_batch.py``를 실행하여  
-mouth crop된 image frame을 생성합니다.  
-  
+## face_landmarks.dat 추가하기  
+``/LipNet/predictors/{shape_predictor_68_face_landmarks.dat}`` 
+shape_predictor_68_face_landmarks.dat를 다운로드 받아 해당 위치에 넣어주어야 합니다.
 ## dataset  
-한국어 영상을 만들어서  
+  
+video 파일을 traning에 넣고 ``/LipNet/scripts/extract_mouth_batch.py``를 실행하여 mouth crop된 image frame을 생성합니다.  
+
 train dataset는
-`` training/{speaker}/dataset/train/{speaker}/[train videos]``  
+`` /LipNet/training/{speaker}/dataset/train/{speaker}/[train videos]``  
 val dataset는  
-``training/{speaker}/dataset/val/{speaker}/[val videos]``  
+``/LipNet/training/{speaker}/dataset/val/{speaker}/[val videos]``  
 로 넣어줍니다.  
   
 영상의 발화 sequence를 ``align``파일로 만들어줍니다.  
 ``align``파일의 예제 형식도 첨부해 두었습니다.
 영상의 형식은 ``{align}.align``입니다.
-``training/{speaker}/dataset/{speaker}/align/[aligns]``에 넣어줍니다.
-
+``/LipNet/training/{speaker}/dataset/{speaker}/align/[aligns]``에 넣어줍니다.
+  
+  
 ## train  
 ```
 python3 training/train.py {speaker}
