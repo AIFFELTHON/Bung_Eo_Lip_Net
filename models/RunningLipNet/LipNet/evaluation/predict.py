@@ -82,5 +82,5 @@ if __name__ == '__main__':
     print ("                   \\/_/                       ")
     print ("")
     print ("             --{}- ".format(stripe))
-    print ("[ DECODED ] |> {} |".format(result.encode('utf-8')))
+    print ("[ DECODED ] |> {} |".format(result))
     print ("             --{}- ".format(stripe))

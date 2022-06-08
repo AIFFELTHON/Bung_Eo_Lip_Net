@@ -208,9 +208,7 @@ class BasicGenerator(keras.callbacks.Callback):     # 기본 제네레이터
             ret = self.get_batch(cur_train_index, self.minibatch_size, train=True)
             # if epoch_differences > 0:
             #     print ("GENERATOR EPOCH {} - {}:{}".format(self.process_train_epoch, cur_train_index, cur_train_index + self.minibatch_size))
-            # print (ret[0]['source_str'])
-            #     print ("-------------------")
-            # print(decoder.decode())
+
             yield ret
 
     @threadsafe_generator
