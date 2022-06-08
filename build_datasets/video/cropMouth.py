@@ -47,10 +47,6 @@ with open ("./videos.json","r") as loadJson:
 
                             PATH = mp4_path.replace('video', 'image')
                             cv2.imwrite(os.path.join(PATH[:-4], '%d.png' % v_cap.get(1)), resized)
-                            #./data/001/001_0/image/001_01안녕하세요
-                            #./data/001/001_0/image/001_0_01
-                            #./data/001/001_0/video/001_0_01.avi
-                            
                             print("Frame Captured: %d" % v_cap.get(1))
                             #if cv2.waitKey(1) & 0xFF == ord('q'):
                             #break

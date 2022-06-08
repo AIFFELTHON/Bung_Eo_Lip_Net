@@ -4,11 +4,11 @@ from subprocess import call
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 import os
 
-# result = getVideos.test("./videos.json")
-#['001','002','003']
-#result = []
-result = []
+result = getVideos.test("./videos.json")
 
+# avi/ 안에 해당 영상이 담겨있을 경우 getvideos 불러오지 않아도됌
+
+result = []
 with open ("./videos.json","r") as loadJson:
     LOAD = json.load(loadJson)
     for key, value in LOAD.items():
@@ -35,8 +35,6 @@ for key in result:
 	for count in range(len(data)):
 		dictTime = data[count]['words']
 		num = 0
-		# data/001/video/001_1_001.avi
-		# data/001/image/001_1_001/1.png
 		
 		for row in dictTime:
 			# end_time, start_time, word를 WordTimeList안에 따로 담기  
