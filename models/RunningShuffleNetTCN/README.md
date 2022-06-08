@@ -12,6 +12,8 @@ RunningShuffleNetTCN
 │   │   └── visual_data
 │   │       ├── {word}
 │   │       │   ├── test
+│   │       │   │   ├── {word_00001.npz}
+│   │       │   │   └── ...
 │   │       │   ├── train
 │   │       │   └── val
 │   │       └── ...
@@ -21,6 +23,8 @@ RunningShuffleNetTCN
 │   │   └── hangeul_landmarks
 │   │       ├── {word}
 │   │       │   ├── test
+│   │       │   │   ├── {word_00001.npz}
+│   │       │   │   └── ...
 │   │       │   ├── train
 │   │       │   └── val
 │   │       └── ...
@@ -32,7 +36,10 @@ RunningShuffleNetTCN
 └── hangeul
     ├── {word}
     │   ├── test
-    │   ├── train      
+    │   │   ├── {word_00001.avi}
+    │   │   ├── {word_00001.txt}
+    │   │   └── ...
+    │   ├── train
     │   └── val
     └── ...
 ```
