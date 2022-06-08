@@ -4,9 +4,9 @@ from subprocess import call
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 import os
 
-result = getVideos.test("./videos.json")
+# result = getVideos.test("./videos.json")
 #['001','002','003']
-#result = []
+result = []
 with open ("./videos.json","r") as loadJson:
     LOAD = json.load(loadJson)
     for key, value in LOAD.items():
@@ -26,7 +26,8 @@ for key in result:
 	WordJson.append(VideoNameJson)
 	ListJson = []
 	#encoding='cp949'
-	with open('/home/SEJ/STT-DataPreprocessing/STT/wavs/' + key + '.json') as f:
+	#/home/sej/Bung_Eo_Lip_Net/build_datasets/STT/wavs
+	with open('/home/sej/Bung_Eo_Lip_Net/build_datasets/STT/wavs/' + key + '_cut.json', encoding='cp949') as f:
 		data = json.load(f)
 
 	for count in range(len(data)):
@@ -49,7 +50,7 @@ for key in result:
 			video_name = '{}_{}_{}'.format(key, count, Num)
 			
 			# 너무 짧고 긴 영상은 자르기
-			if duration > 0.5 and duration < 1.3:
+			if duration > 0.3 and duration < 1.3:
 			
 				#WordListJson[video_name] = WordTimeList[2]
 				WordListJson = {"fileName": video_name, "word": WordTimeList[2], "duration": duration}

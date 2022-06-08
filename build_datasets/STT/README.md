@@ -31,3 +31,7 @@
 python3 auto.py
 
 ```
+
+- ```videos.json```에 다운받을 영상 목록을 작성한후 ```auto.py```를 실행
+- 영상을 GCS에 옮겨담고 STT추출
+- STT json파일은 ```wavs/```폴더 안에 담김
