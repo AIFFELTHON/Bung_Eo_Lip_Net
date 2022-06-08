@@ -30,10 +30,10 @@
 
 |LipNet|DC-TCN|
 |:---:|:---:|
-|![LipNet Architecture Summary][LipNet Architecture Summary]|![ShuffleNetTCN Summary][ShuffleNetTCN Architecture Summary]|
+|![LipNet Architecture Description][LipNet Architecture Description]|![ShuffleNetTCN Architecture Description][ShuffleNetTCN Architecture Description]|
 
-[LipNet Architecture Summary]: imgs/LipNet_architecture.PNG
-[ShuffleNetTCN Architecture Summary]: imgs/ShuffleNetTCN_architecture_description.PNG
+[LipNet Architecture Description]: imgs/LipNet_architecture_description.PNG
+[ShuffleNetTCN Architecture Description]: imgs/ShuffleNetTCN_architecture_description.PNG
 
 - 딥러닝 2단계 접근법
   - Frontend: 3D-CNN(3D conv layer + deep 2D conv)
@@ -106,9 +106,9 @@ SOTA 를 달성한 가볍고 최신 단어 단위 모델인 ShuffleNetTCN 사용
 
 ### Process
 
-![ShuffleNetTCN architecture][ShuffleNetTCN architecture]
+![ShuffleNetTCN Process][ShuffleNetTCN Process]
 
-[ShuffleNetTCN architecture]: imgs/ShuffleNetTCN_architecture.PNG
+[ShuffleNetTCN Process]: imgs/ShuffleNetTCN_architecture.PNG
 
 - 3D Conv: video 처리
 - ResNet-18 or ShuffleNet: image frames 처리
