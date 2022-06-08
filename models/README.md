@@ -1,4 +1,21 @@
-# Lipreading Models
+<h1 align="center">Lipreading Models</h1>
+
+<div align="right">
+  AIFFEL DAEGU 1 TEAM 뻐끔뻐끔
+  <br>
+  <i>#Tags: CV, NLP, LipNet, ShuffleNet-TCN</i>
+</div>
+
+---
+
+## 📌 TABLE OF CONTENTS
+
+- [I/O](#io)
+- [공통 구조](#공통-구조)
+- [LipNet (2016)](#lipnet-2016)
+- [ShuffleNetTCN (2020)](#shufflenettcn-2020)
+
+---
 
 ## I/O
 
@@ -13,14 +30,18 @@
 
 |LipNet|DC-TCN|
 |:---:|:---:|
-|![LipNet Architecture Summary][LipNet Architecture Summary]|![DC TCN Summary][DC TCN Architecture Summary]|
+|![LipNet Architecture Summary][LipNet Architecture Summary]|![ShuffleNetTCN Summary][ShuffleNetTCN Architecture Summary]|
 
 [LipNet Architecture Summary]: imgs/LipNet_architecture.PNG
-[DC TCN Architecture Summary]: imgs/DC_TCN_architecture_description.PNG
+[ShuffleNetTCN Architecture Summary]: imgs/ShuffleNetTCN_architecture_description.PNG
 
 - 딥러닝 2단계 접근법
   - Frontend: 3D-CNN(3D conv layer + deep 2D conv)
   - Backent: LSTM, Attention Mechanisms, self-attention module, TCN (Temporal Convolutional Networks)
+
+**[⬆ back to top](#-table-of-contents)**
+
+---
 
 ## LipNet (2016)
 
@@ -55,6 +76,10 @@
 
 SOTA 를 달성한 가볍고 최신 단어 단위 모델인 ShuffleNetTCN 사용
 
+**[⬆ back to top](#-table-of-contents)**
+
+---
+
 ## ShuffleNetTCN (2020)
 
 ### Key Contributions
@@ -88,3 +113,5 @@ SOTA 를 달성한 가볍고 최신 단어 단위 모델인 ShuffleNetTCN 사용
 - 3D Conv: video 처리
 - ResNet-18 or ShuffleNet: image frames 처리
 - MS-TCN: text output 생성
+
+**[⬆ back to top](#-table-of-contents)**
