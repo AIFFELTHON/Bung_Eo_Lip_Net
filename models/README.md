@@ -21,19 +21,19 @@
 
 ![Lipreading Model Input Output][Lipreading Model Input Output]
 
-[Lipreading Model Input Output]: imgs/Lipreading_input_and_output.PNG
+[Lipreading Model Input Output]: imgs/Lipreading_input_and_output.png
 
 - Input: Video(.avi), Align(.txt)
 - Output: Text(.txt) → Video(.gif, .avi)
 
 ## 공통 구조
 
-|LipNet|DC-TCN|
+|LipNet|ShuffleNetTCN|
 |:---:|:---:|
 |![LipNet Architecture Description][LipNet Architecture Description]|![ShuffleNetTCN Architecture Description][ShuffleNetTCN Architecture Description]|
 
-[LipNet Architecture Description]: imgs/LipNet_architecture_description.PNG
-[ShuffleNetTCN Architecture Description]: imgs/ShuffleNetTCN_architecture_description.PNG
+[LipNet Architecture Description]: imgs/LipNet_architecture_description.png
+[ShuffleNetTCN Architecture Description]: imgs/ShuffleNetTCN_architecture_description.png
 
 - 딥러닝 2단계 접근법
   - Frontend: 3D-CNN(3D conv layer + deep 2D conv)
@@ -54,7 +54,7 @@
 
 ![LipNet Process][LipNet Process]
 
-[LipNet Process]: imgs/LipNet_architecture.PNG
+[LipNet Process]: imgs/LipNet_architecture.png
 
 - STCNN: video 에서 시간의 흐름과 공간의 차원을 모두 convolution
 - bi-LSTM: STCNN 의 output sequence 정보를 전파하기 위해 사용, 정보 흐름 제어 학습
@@ -108,7 +108,7 @@ SOTA 를 달성한 가볍고 최신 단어 단위 모델인 ShuffleNetTCN 사용
 
 ![ShuffleNetTCN Process][ShuffleNetTCN Process]
 
-[ShuffleNetTCN Process]: imgs/ShuffleNetTCN_architecture.PNG
+[ShuffleNetTCN Process]: imgs/ShuffleNetTCN_architecture.png
 
 - 3D Conv: video 처리
 - ResNet-18 or ShuffleNet: image frames 처리

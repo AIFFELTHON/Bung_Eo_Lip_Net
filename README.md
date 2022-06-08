@@ -61,7 +61,7 @@
 
 ![Total Process][Total Process]
 
-[Total Process]: imgs/Total_process.PNG
+[Total Process]: imgs/Total_process.png
 
 ### 협업 툴 사용
 
@@ -110,13 +110,13 @@
 
 ![Data Collection Pipeline][Data Collection Pipeline]
 
-[Data Collection Pipeline]: imgs/Korean_data_collection_pipeline.PNG
+[Data Collection Pipeline]: imgs/Korean_data_collection_pipeline.png
 
 ### 데이터셋 구축 파이프라인 - Google STT 자동화
 
 ![Korean Datasets][Korean Datasets]
 
-[Korean Datasets]: imgs/Google_STT_modularization.PNG
+[Korean Datasets]: imgs/Google_STT_modularization.png
 
 ### 데이터셋 구축 순서
 
@@ -138,7 +138,7 @@
 
 ![Preprocessing][Preprocessing]
 
-[Preprocessing]: imgs/Preprocessing.PNG
+[Preprocessing]: imgs/Preprocessing.png
 
 ### 전처리 순서
 
@@ -158,8 +158,8 @@
 |:---:|:---:|
 |![LipNet][LipNet]|![ShuffleNet-TCN][ShuffleNet-TCN]|
 
-[LipNet]: imgs/LipNet_architecture.PNG
-[ShuffleNet-TCN]: imgs/ShuffleNet_TCN_architecture.PNG
+[LipNet]: imgs/LipNet_architecture.png
+[ShuffleNet-TCN]: imgs/ShuffleNet_TCN_architecture.png
 
 1. LipNet 으로 진행하다가 연산량 이슈로 학습이 더 이상 불가능한 상황 발생
 2. 경량화에 초점을 맞춘 ShuffleNet-TCN 모델로 변경
@@ -178,7 +178,7 @@
 |![Input][Input]|![Process][Process]|![Output][Output]|
 
 [Input]: imgs/Demo_origin_GIF.gif
-[Process]: imgs/Demo_process.PNG
+[Process]: imgs/Demo_process.png
 [Output]: imgs/Demo_predict_GIF.gif
 
 - Input: '함께' 단어 영상
@@ -208,7 +208,7 @@
 |:---:|---|
 |![Service][Service]|1. BentoML 을 통해 Backend 와 AI 모델 매핑<br>2. ReactJS 를 통해 Frontend 구축<br>3. Web Domain 주소 설정<br>4. Web Service 배포|
 
-[Service]: imgs/Service_process.PNG
+[Service]: imgs/Service_process.png
 
 **[⬆ back to top](#-table-of-contents)**
 
@@ -220,13 +220,13 @@
 
 ![Paper chart 1][Paper chart 1]
 
-[Paper chart 1]: imgs/Paper_chart_1.PNG
+[Paper chart 1]: imgs/Paper_chart_1.png
 
 ### 차용한 논문 3가지
 
 ![Paper chart 2][Paper chart 2]
 
-[Paper chart 2]: imgs/Paper_chart_2.PNG
+[Paper chart 2]: imgs/Paper_chart_2.png
 
 ### 차용한 논문 관련 링크
 
