@@ -1,5 +1,36 @@
 # STT-DataPreprocessing
 
+
+```bash
+├── STT
+│   ├── wavs/
+│   ├── auto.py
+│   ├── downloadFileGCS.py
+│   ├── getAudioes.py
+│   ├── sendToGCS.py
+│   ├── sttJson.py
+│   └── videos.json
+├── video
+│   ├── avi/
+│   ├── data/ ├── align
+│   │         ├── face_video
+│   │         ├── video
+│   │         └── WordJson.json
+│   ├── MostWord/ ├── MostWord = [] 리스트안에 담은 단어
+│   ├── cropMouth.py
+│   ├── cutVideo.py
+│   ├── dictWord.py
+│   ├── faceRecognitionFromVideo.py
+│   ├── frameMaching.py
+│   ├── getVideos.py
+│   ├── makeDir.py
+│   ├── takeWord.py
+│   └── videos.json
+└── requirements.txt
+``` 
+
+
+
 ## TODO
 
 - 구글 STT를 사용해서 영상을 어절별로 자르는 것이 목표
@@ -13,6 +44,8 @@
 - [x] 영상 단어(어절)에 맞추어 자르기
 - [x] 입술 크롭한 데이터 폴더명 지정하기
 - [x] 영상 얼굴 랜드마크 찾고 얼굴 자르기
+
+
 
 
 

@@ -29,6 +29,9 @@ for file_name in mostWord:
 for key in result:
     txt_names = os.listdir('./data/{}/align/'.format(key))
     path ='./data/{}/align/'.format(key)
+    #path = './data/A/face_video_align/
+    #txt_names = os.listdir(path)
+    
 
     for word in txt_names:
         txt_path = path + word
@@ -47,7 +50,6 @@ for key in result:
                 avi_path = txt_path.replace('align', 'video').replace('txt', 'avi') #face_vide - video ,video - videoA
                 shutil.copy(face_avi_path, "./MostWord{}/{}/video/{}.avi".format(arg, line[6:-2], word[:-4]))
                 shutil.copy(avi_path, "./MostWord{}/{}/videoA/{}.avi".format(arg, line[6:-2], word[:-4]))
-
             wordListtxt.close()
         except:
             print('error')
