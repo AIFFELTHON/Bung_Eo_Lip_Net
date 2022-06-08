@@ -76,7 +76,7 @@ RunningShuffleNetTCN
 
 ## Execution
 
-### Preprocessing - Success
+### Preprocessing
 
 1. crop_mouth_from_video.py
     - 영상 -> 이미지 프레임에서 입술만 잘라냄 -> numpy 변환 -> datasets/visual_data 경로에 .npz 저장
