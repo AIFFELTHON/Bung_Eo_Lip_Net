@@ -69,7 +69,7 @@ RunningShuffleNetTCN
         - pip install wandb
 3. 데이터셋: [The Oxford-BBC Lip Reading in the Wild (LRW)](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html)
     - 데이터셋 다운로드 받으려면 서약서 작성해서 이메일(rob.cooper@bbc.co.uk) 보내고 승인받은 비밀번호 입력해야 함
-    - [데이터셋 서약서 다운로드 페이지](https://www.bbc.co.uk/rd/projects/lip-reading-datasets)
+        - [데이터셋 서약서 작성 문서 다운로드 페이지](https://www.bbc.co.uk/rd/projects/lip-reading-datasets)
     - **조건 없이 다운받을 수 있는 샘플 데이터 1개(AFTERNOON.mp4, AFTERNOON.txt)를 복제해서 실행 도전 성공**
     - **우리가 사용할 한국어 데이터 1개 복제해서 실행 도전 성공**
     - 구축한 한국어 데이터셋으로 train, test 완료
