@@ -2,33 +2,38 @@
 
 
 ```bash
+
 ├── STT
-│   ├── wavs/
+│   ├── wavs
 │   ├── auto.py
 │   ├── downloadFileGCS.py
 │   ├── getAudioes.py
 │   ├── sendToGCS.py
 │   ├── sttJson.py
 │   └── videos.json
-├── video
-│   ├── avi/
-│   ├── data/ ├── align
-│   │         ├── face_video
-│   │         ├── video
-│   │         └── WordJson.json
-│   ├── MostWord/ ├── `MostWord`
-│   ├── cropMouth.py
-│   ├── cutVideo.py
-│   ├── dictWord.py
-│   ├── faceRecognitionFromVideo.py
-│   ├── frameMaching.py
-│   ├── getVideos.py
-│   ├── makeDir.py
-│   ├── takeWord.py
-│   └── videos.json
-└── requirements.txt
+└── video
+    ├── avi
+    ├── data
+    │   └── [video_name]
+    │       ├── face_video
+    │       ├── face_video_align
+    │       └── video
+    ├── MostWord
+    │   └── [mostword]
+    │       ├── align
+    │       ├── video
+    │       ├── videoA
+    │       └── WordJson.json
+    ├── cropMouth.py
+    ├── cutVideo.py
+    ├── dictWord.py
+    ├── faceRecognitionFromVideo.py
+    ├── frameMaching.py
+    ├── getVideos.py
+    ├── makeDir.py
+    ├── takeWord.py
+    └── videos.json
 ``` 
-
 
 
 ## TODO
