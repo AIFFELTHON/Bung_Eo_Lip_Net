@@ -17,13 +17,13 @@
     │   └── [video_name]
     │       ├── face_video
     │       ├── face_video_align
-    │       └── video
+    │       ├── video
+    │       └── WordJson.json
     ├── MostWord
     │   └── [mostword]
     │       ├── align
     │       ├── video
-    │       ├── videoA
-    │       └── WordJson.json
+    │       └── videoA
     ├── cropMouth.py
     ├── cutVideo.py
     ├── dictWord.py
