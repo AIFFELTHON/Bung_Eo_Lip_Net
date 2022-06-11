@@ -10,50 +10,41 @@ import numpy as np
 def videoToArray(path) :
     vidObj = cv2.VideoCapture(path)
 
-    # Some useful info about the video
     width = int(vidObj.get(3))
     height = int(vidObj.get(4))
     fps = int(vidObj.get(5))
     n_frames = int(vidObj.get(7))
     print("Video info : {}x{}, {} frames".format(height,width,n_frames))
-    # Create the numpy array that will host all the frames
-    # Could use np.append later in the loop but this is
-    # more efficient
+
     video = np.zeros((height, width, n_frames))
     video = video.astype(np.uint8)
 
-    # Iterate over every frame of the video
     i = 0
     while True :
-        # Capture one frame
         success, frame = vidObj.read()
         if not success :
             break;
         else :
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            # Save to one 4D numpy array
             video[:, :, i] = frame
             i += 1
     return video, n_frames, fps
 
 def frameAdjust(video):
+    #30 프레임 맞추기
     target = 30
     n_frames = video.shape[2]
-    if target == n_frames :
+    if target == n_frames : #30이면 그대로 리턴
         print("Perfect number of frames !")
         return video
     else :
-        if n_frames > target :
-            # If number of frames is more than 29, we select
-            # 29 evenly distributed frames
+        if n_frames > target : #30보다 크면 일정한 간격으로 맞춰 자르기
             print("Adjusting number of frames")
             idx = np.linspace(0, n_frames-1, 30) #1차원 배열만들기 : 0~ 총프레임 수까지 29개 일정한 간격으로 만들기
             idx = np.around(idx, 0).astype(np.int32) #반올림
             print("Indexes of the selected frames : \n{}".format(idx))
             return video[:, :, idx]
-        else :
-            # If number of frames is less than 29, duplicate last
-            # frame at the end of the video
+        else : #30보다 작으면 맨뒤의 프레임 동일하게 복제
             output_video = np.zeros((video.shape[0], video.shape[1], 30)).astype(np.uint8)
             output_video[:, :, :n_frames] = video
             for i in range(target-n_frames+1) :
@@ -91,7 +82,7 @@ def _write_video(video, path, name, fps) :
         )
     writer.release()
 
-#
+
 #MostWord=['and','atnews','but','covid','differ','eruke','especially','huak','korea','korean'
 #    ,'othun','this','today','usa','with']
 MostWord = ['and', 'atnews']

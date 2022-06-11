@@ -3,9 +3,9 @@
 import os
 import json
 
-txt_names = os.listdir('./data/{}/face_video_align'.format(key))
-
-path ='align 모아놓은 폴더 경로'
+key = 'align 모아놓은 폴더 경로'
+path ='./data/{}/align'.format(key)
+txt_names = os.listdir(path)
 
 lines=[]
 for word in txt_names:
@@ -15,7 +15,6 @@ for word in txt_names:
     lines.append(line[6:])
 print(lines)
 
-
 wordListtxt = open("word_list.txt", 'w')
 
 for i in lines:
@@ -23,6 +22,7 @@ for i in lines:
 wordListtxt.close()
 
 
+#dict.json 생성
 def create_dict_word_list(path) :
     count = 0
     my_dict = dict()
@@ -30,7 +30,6 @@ def create_dict_word_list(path) :
         for line in f:
             my_dict.update({count : line[:-1]})
             count += 1
-    return my_dict
 
-with open('dict.json','w') as f:
-    json.dump(my_dict, f, indent=4, ensure_ascii=False)
+    with open('dict.json','w') as f:
+        json.dump(my_dict, f, indent=4, ensure_ascii=False)

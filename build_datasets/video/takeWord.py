@@ -10,6 +10,7 @@ try:
     os.makedirs("./MostWord{}".format(arg))
 except:
     pass
+
 result=[]
 with open ("./videos.json","r") as loadJson:
 	LOAD = json.load(loadJson)
@@ -38,7 +39,6 @@ for key in result:
         wordList = open(txt_path, 'r')
         line = wordList.readline()
         #print(line[6:-2])
-# txt -> avi
         try:
             if line[6:-2] in mostWord:
                 txt = "파일명: " + word + line

@@ -13,9 +13,6 @@ with open ("./videos.json","r") as loadJson:
     LOAD = json.load(loadJson)
     for key, value in LOAD.items():
         os.makedirs("./data/{}/face_video".format(key))
-       
-        # 폴더 만들기
-        # 이미지 경로 불러오기
         image_path = makeDir. makeImageDir(key)
         print(image_path)
 

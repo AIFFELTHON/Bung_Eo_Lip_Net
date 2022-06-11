@@ -7,12 +7,12 @@ import os
 result = getVideos.test("./videos.json")
 
 # avi/ 안에 해당 영상이 담겨있을 경우 getvideos 불러오지 않아도됌
-
-result = []
-with open ("./videos.json","r") as loadJson:
-    LOAD = json.load(loadJson)
-    for key, value in LOAD.items():
-        result.append(key)
+# getVideos가 필요없을 때 주석 풀어 사용
+# result = []
+# with open ("./videos.json","r") as loadJson:
+#     LOAD = json.load(loadJson)
+#     for key, value in LOAD.items():
+#         result.append(key)
 
 
 #WordJson은 어절단위로 자른 영상 정답 라벨을 모은 제이슨파일
@@ -57,14 +57,18 @@ for key in result:
 				ListJson.append(WordListJson)
 
 				print(WordTimeList[2])
-				#앞뒤로 0.3초 패딩
+				#앞뒤로 영상 길이 늘리기
 				ffmpeg_extract_subclip("./avi/{}.avi".format(key), 
-										WordTimeList[1]-0.3, 
-										WordTimeList[0]+0.2, 
+										WordTimeList[1]-0.1, 
+										WordTimeList[0]+0.1, 
 										targetname="./data/{}/video/{}.avi".format(key, video_name))
 				#align.txt 만들기
 				txt = open("./data/{}/align/{}.txt".format(key, video_name), 'a')
-				txt.write("word: {} \nduration: {} \nstarttime: {} \nendtime: {} ".format(WordTimeList[2], duration+0.5, WordTimeList[1]-0.3, WordTimeList[0]+0.2))
+				#align.txt파일 안에 들어갈 항목 - duration길이, 시작시간, 끝시간 위와 동일하게 맞춰주기
+				txt.write("word: {} \nduration: {} \nstarttime: {} \nendtime: {} ".format(WordTimeList[2], 
+																							duration+0.2, 
+																							WordTimeList[1]-0.1, 
+																							WordTimeList[0]+0.1))
 				txt.close	
 		VideoNameJson["words"] = ListJson	
 

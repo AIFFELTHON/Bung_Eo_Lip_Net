@@ -4,6 +4,7 @@ import sttJson
 import json
 import os
 
+#환경변수 계정등록
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="key.json"
 
 bucket_name = "example_baker"
